@@ -1,0 +1,248 @@
+/* CSS DOCUMENT */
+@charset "utf-8";
+
+@font-face {
+    font-family: "genesize";
+    src: url(tipos/genesize-grotesk/GenesizeGroteskDemo.otf);
+}
+
+@font-face {
+    font-family: "ralewayreg";
+    src: url(tipos/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ralewayitalic";
+    src: url(tipos/Raleway/static/Raleway-Italic.ttf);
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-family: 'raleway', san;
+    color: rgb(255, 240, 211);
+    text-decoration: none;
+    padding: 30px;
+}
+
+
+body {
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: transparent;
+}
+
+#hero {
+    background-image: url(imagenes/entrada.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+
+
+#intro {
+    display: flex;
+    background-color: rgb(8, 2, 4);
+    min-height: 80vh;
+    justify-content: center;
+    padding: 30px;
+}
+
+#intro p {
+    font-family: "genesize", sans-serif;
+    color: rgb(255, 55, 140);
+    font-size: 160px;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+#proyectos h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 64px;
+    color: rgb(255, 240, 211);
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+#proyectos {
+    display: flex;
+    background-color: rgb(255, 55, 140);
+    text-align: center;
+    min-height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#proyectos h2 {
+    color: rgb(255, 240, 211);
+    font-size: 50px;
+    font-style: italic;
+}
+
+.trabajos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cuadro {
+    background-color: rgb(255, 240, 211);
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: normal;
+}
+
+.cuadro h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cuadro p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.cuadro a {
+    background-color: rgb(255, 55, 140);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+
+.volver {
+    background-color: rgb(255, 55, 140);
+    border-radius: 20px;
+}
+
+.volver:hover {
+    background-color: rgb(8, 2, 4);
+    font-style: italic;
+}
+
+.botones {
+    color: rgb(8, 2, 4);
+}
+
+.botones:hover {
+    font-style: italic;
+}
+
+.contacto {
+    background-color: rgb(255, 240, 211);
+    border-radius: 20px;
+    color: rgb(255, 55, 140);
+    ;
+}
+
+.contacto:hover {
+    background-color: rgb(255, 55, 140);
+    font-style: italic;
+    color: rgb(255, 240, 211)
+}
+
+.cuadro:hover {
+    background-image: url(imagenes/museo.jpg);
+}
+
+/* no entiendo como podria hacer para que los class "cuadro" cuando yo haga el hover tengan cada uno una imagen diferente */
+
+#informacion {
+    background-image: url(imagenes/contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.info{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-family: "ralewayreg", sans-serif;
+}
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 80px;
+    
+}
+
+.derecha h2{
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(255, 240, 211);
+    margin: 0;
+    font-weight: 400;
+}
+
+.izquierda p{
+    color: rgb(255, 240, 211);
+    font-size: 20px;
+}
+
+.volverdos {
+    background-color: rgb(8, 2, 4);
+    border-radius: 20px;
+}
+
+.volverdos:hover {
+    background-color: rgb(255, 55, 140);
+    font-style: italic;
+}
+
+.galeria{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 130px 20px 20px 20px;
+}
+
+.galeria img{
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+body{
+    background-color: rgb(255, 240, 211);
+}
